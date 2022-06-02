@@ -38,8 +38,10 @@ def grocery_list():
             del complete_list[to_delete.lower().strip()]
         elif response.lower().strip() == 'show':
             for item, qty in complete_list.items():
-                print(f"{item_qty} {new_item}s")
+                print(f"{qty} {item}s")
         elif response.lower().strip() == 'quit':
             break
     for item, qty in complete_list.items():
-        print(f"{item_qty} {new_item}s")
+        print(f"{qty} {item}s")
+
+grocery_list()
